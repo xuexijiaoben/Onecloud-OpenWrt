@@ -52,10 +52,13 @@ merge_package v5 https://github.com/sbwml/luci-app-mosdns package/app luci-app-m
 merge_package main https://github.com/kenzok8/small-package package/app luci-app-fileassistant
 git clone -b js --depth 1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/app/luci-app-unblockneteasemusic
 git clone -b master https://github.com/sbwml/luci-app-qbittorrent package/app/qbittorrent
-git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/app/passwall_packages
-merge_package main https://github.com/xiaorouji/openwrt-passwall2 package/app luci-app-passwall2
-merge_package main https://github.com/xiaorouji/openwrt-passwall package/app luci-app-passwall
+git clone https://github.com/Openwrt-Passwall/openwrt-passwall-packages package/app/passwall_packages
+merge_package main https://github.com/Openwrt-Passwall/openwrt-passwall2 package/app luci-app-passwall2
+merge_package main https://github.com/Openwrt-Passwall/openwrt-passwall package/app luci-app-passwall
 merge_package dev https://github.com/vernesong/OpenClash package/app luci-app-openclash
+
+merge_package main https://github.com/stackia/rtp2httpd package/app openwrt-support/luci-app-rtp2httpd
+merge_package main https://github.com/stackia/rtp2httpd package/app openwrt-support/rtp2httpd
 
 # 内核，参照 kiddin9
 shopt -s extglob
